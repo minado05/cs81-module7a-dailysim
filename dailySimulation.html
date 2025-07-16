@@ -24,18 +24,21 @@
       setTimeout(() => (output.textContent = "☀️"), 100);
       setTimeout(() => {
         output.textContent = "8:00am - Wake up 🧘🏻‍♀️";
-        twist.textContent = "Energy state: 🔋";
       }, 1000);
       setTimeout(() => (output.textContent = "9:00am - Breakfast 🥞"), 2000);
-      setTimeout(() => {
-        output.textContent = "10:00am - Work 👩🏻‍💻";
-      }, 4000);
-      setTimeout(() => (output.textContent = "Sipping hojicha ☕️"), 8000);
+      setTimeout(() => (output.textContent = "10:00am - Work 👩🏻‍💻"), 4000);
+      setTimeout(() => (output.textContent = "...sipping hojicha ☕️..."), 8000);
       setTimeout(() => (output.textContent = "1:00pm - Lunch timeee! Nom nom 🍲"), 12000);
-      setTimeout(() => (twist.textContent = "Energy state: 🫩"), 18000);
-      setTimeout(() => (twist.textContent = "Energy state: 🪫"), 20000);
+      setTimeout(() => (output.textContent = "2:00pm - Back at work 👩🏻‍💻"), 12000);
+      setTimeout(() => {
+        twist.textContent = "🪫";
+        output.textContent = "5:55pm - Almost done";
+      }, 20000);
       setTimeout(() => (output.textContent = "6:00pm - Dinner time 🍽️"), 22000);
-      setTimeout(() => (output.textContent = "8:00pm - Planning for trip 🧳"), 24000);
+      setTimeout(() => {
+        output.textContent = "8:00pm - Planning for trip 🧳";
+        twist.textContent = "🌃";
+      }, 24000);
       setTimeout(() => (output.textContent = "12:00am - Done for the day 😴"), 32000);
     </script>
   </body>
