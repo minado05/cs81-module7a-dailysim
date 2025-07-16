@@ -14,16 +14,26 @@
   >
     <h1>My Simulated Day</h1>
     <div id="output" style="margin-top: 40px; font-size: 2rem"></div>
+    <div id="twist" style="margin-top: 45px; font-size: 1.5rem"></div>
 
     <script>
       const output = document.getElementById("output");
+      const twist = document.getElementById("twist");
+
       //ADD CODE HERE
       setTimeout(() => (output.textContent = "☀️"), 100);
-      setTimeout(() => (output.textContent = "8:00am - Wake up 🧘🏻‍♀️"), 1000);
+      setTimeout(() => {
+        output.textContent = "8:00am - Wake up 🧘🏻‍♀️";
+        twist.textContent = "Energy state: 🔋";
+      }, 1000);
       setTimeout(() => (output.textContent = "9:00am - Breakfast 🥞"), 2000);
-      setTimeout(() => (output.textContent = "10:00am - Work 👩🏻‍💻"), 4000);
-      setTimeout(() => (output.textContent = "Sipping hojicha as I work ☕️"), 8000);
+      setTimeout(() => {
+        output.textContent = "10:00am - Work 👩🏻‍💻";
+      }, 4000);
+      setTimeout(() => (output.textContent = "Sipping hojicha ☕️"), 8000);
       setTimeout(() => (output.textContent = "1:00pm - Lunch timeee! Nom nom 🍲"), 12000);
+      setTimeout(() => (twist.textContent = "Energy state: 🫩"), 18000);
+      setTimeout(() => (twist.textContent = "Energy state: 🪫"), 20000);
       setTimeout(() => (output.textContent = "6:00pm - Dinner time 🍽️"), 22000);
       setTimeout(() => (output.textContent = "8:00pm - Planning for trip 🧳"), 24000);
       setTimeout(() => (output.textContent = "12:00am - Done for the day 😴"), 32000);
